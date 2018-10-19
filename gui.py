@@ -15,6 +15,7 @@ def copytoclipboard():
 def pastefromclipboard():
     input.delete(0, END)
     input.insert(0, win.clipboard_get())
+    flipinput()
 
 win = Tk()
 win.title("FlipGUID")
