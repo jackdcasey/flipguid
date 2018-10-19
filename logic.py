@@ -18,8 +18,11 @@ def flip(input): #Flips order of input
     return output
    
 def flipguid(input): #Checks if input is GUID or PID, and converts accordingly
-    if input[0] == '{' and isvalid(cleanGUID(input)): #Returns true if input is a valid GUID
-        return flip(cleanGUID(input))
+    try:
+        if input[0] == '{' and isvalid(cleanGUID(input)): #Returns true if input is a valid GUID
+            return flip(cleanGUID(input))
+    except IndexError:
+        pass
 
     if isvalid(input): #Returns true if input is a valid PID
         return (addbrackets(flip(input)))
