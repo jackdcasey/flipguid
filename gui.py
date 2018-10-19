@@ -1,3 +1,5 @@
+# Written with ❤ by Jack Casey
+
 #TODO: Make GUI look better, add convert on hitting enter 
 
 import logic as fn 
@@ -21,8 +23,8 @@ win = Tk()
 win.title("FlipGUID")
 
 inputlabel = Label(win, text="Input: ")
-input = Entry(win, bg='#eee', bd=0, width=40)
-output = Entry(win, bg='#eee', bd=0, width=40)
+input = Entry(win, bg='#eee', bd=2, width=40)
+output = Entry(win, bg='#eee', bd=2, width=40)
 convertbutton = Button(win, text='Convert', command=flipinput)
 copybutton = Button(win, text='Copy to clipboard', command=copytoclipboard)
 pastebutton = Button(win, text='Paste from clipboard', command=pastefromclipboard)

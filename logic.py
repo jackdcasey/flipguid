@@ -1,3 +1,5 @@
+# Written with ❤ by Jack Casey
+
 def cleanGUID(input): #Removes accessory characters from GUID
     removedChar = '{}- '
     for char in removedChar:  
